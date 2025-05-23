@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About | Ahmad Beirami</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <style>
+    body { font-family: Inter, Arial, sans-serif; background: #f7f9fa; color: #232323; margin: 0; }
+    .navbar {
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      width: 100%; display: flex; align-items: center; background: #fff;
+      box-shadow: 0 2px 12px rgba(34, 34, 34, 0.04); padding: 0.85em 3.6em;
+    }
+    .brand {
+      font-weight: 700; color: #228877; font-size: 1.22em; letter-spacing: 0.01em;
+      text-decoration: none; transition: border-bottom 0.2s;
+      border-bottom: 2px solid transparent; padding-bottom: 1px;
+    }
+    .brand:hover { border-bottom: 2.5px solid #228877; }
+    .nav-tabs {
+      margin-left: auto; display: flex; gap: 1.35em;
+    }
+    .nav-tabs a {
+      padding: 0.19em 1.25em; border-radius: 1.1em; background: transparent;
+      color: #444; font-weight: 500; font-size: 1.07em;
+      text-decoration: none; transition: background 0.18s, color 0.18s;
+    }
+    .nav-tabs a:hover { background: #d1ede2; color: #20589c; }
+    .nav-tabs a:last-child { margin-right: 6em; }
+    @media (max-width: 700px) {
+      .navbar { padding: 0.7em; }
+      .brand { font-size: 1em; }
+      .nav-tabs { gap: 0.7em; }
+      .nav-tabs a { font-size: 0.97em; padding: 0.13em 0.6em; }
+      .nav-tabs a:last-child { margin-right: 1em; }
+    }
+    .container {
+      max-width: 700px;
+      margin: 100px auto 0 auto;
+      padding: 40px 32px 32px 32px;
+      background: #fff; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.07); color: #232323;
+    }
+    h1 { margin: 0 0 0.7em 0; font-size: 2em; font-weight: 600; text-align: center; }
+    .section-title {
+      font-size: 1.18em;
+      color: #149073;
+      font-weight: 700;
+      margin-top: 2.1em;
+      margin-bottom: 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 0.47em;
+    }
+    .section-title i {
+      color: #228877;
+      font-size: 1.06em;
+      margin-right: 0.2em;
+    }
+    .bio { font-size: 1.13em; line-height: 1.7; margin-bottom: 2em; color: #222; }
+    .achievements, .awards { margin-bottom: 2em; }
+    .achievements ul, .awards ul { margin: 0; padding: 0 0 0 1.3em; }
+    .achievements li, .awards li { margin-bottom: 0.7em; font-size: 1.07em; }
+    .copyright-footer {
+      width: 100%; text-align: center; font-size: 0.99em; color: #8da0a6;
+      margin-top: 40px; padding: 16px 0 10px 0; background: transparent;
+      letter-spacing: 0.01em;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html" class="brand">Ahmad Beirami</a>
+    <div class="nav-tabs">
+      <a href="about.html">About</a>
+      <a href="academic.html">Academic Engagements</a>
+    </div>
+  </div>
+  <div class="container">
+    <h1>About</h1>
+    <div class="bio">
+      Ahmad Beirami is an entrepreneur and technologist passionate about building innovative, efficient, and scalable products. With a strong research background and hands-on industry experience at Google, Meta, and Electronic Arts, Ahmad bridges deep technical expertise with practical impact.
+    </div>
+    <div class="section-title"><i class="fa-solid fa-flask"></i> Selected Product Achievements</div>
+    <div class="achievements">
+      <ul>
+        <li>Created and launched controlled decoding for alignment of Google Gemini models.</li>
+        <li>Created and launched speculative decoding solutions for 2-5x faster inference from Gemini and Gemma models.</li>
+        <li>Created and launched the first digital assistant with tool-use at Meta AI.</li>
+        <li>Launched first RL solutions for pre-launch playtesting in EA games.</li>
+      </ul>
+    </div>
+    <div class="section-title"><i class="fa-solid fa-trophy"></i> Selected Awards & Honors</div>
+    <div class="awards">
+      <ul>
+        <li>Outstanding Paper Award, International Conference on Learning Representations (2025)</li>
+        <li>Outstanding Paper Award, IEEE Computational Intelligence Society (2022)</li>
+        <li>Sigma Xi Best PhD Thesis Award, Georgia Tech (2015)</li>
+      </ul>
+    </div>
+  </div>
+<footer class="copyright-footer">Copyright 2025 Ahmad Beirami</footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ahmad Beirami</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <style>
+    body { font-family: Inter, Arial, sans-serif; background: #f8fafb; color: #222; margin: 0; }
+    .navbar {
+      width: 100%; display: flex; align-items: center; background: #fff;
+      box-shadow: 0 2px 12px rgba(34, 34, 34, 0.04); padding: 0.85em 3.6em;
+    }
+    .brand {
+      font-weight: 700; color: #228877; font-size: 1.22em; letter-spacing: 0.01em;
+      text-decoration: none; transition: border-bottom 0.2s;
+      border-bottom: 2px solid transparent; padding-bottom: 1px;
+    }
+    .brand:hover { border-bottom: 2.5px solid #228877; }
+    .nav-tabs {
+      margin-left: auto; display: flex; gap: 1.35em;
+    }
+    .nav-tabs a {
+      padding: 0.19em 1.25em; border-radius: 1.1em; background: transparent;
+      color: #444; font-weight: 500; font-size: 1.07em;
+      text-decoration: none; transition: background 0.18s, color 0.18s;
+    }
+    .nav-tabs a:hover { background: #d1ede2; color: #20589c; }
+    .nav-tabs a:last-child { margin-right: 6em; }
+    @media (max-width: 700px) {
+      .navbar { padding: 0.7em; }
+      .brand { font-size: 1em; }
+      .nav-tabs { gap: 0.7em; }
+      .nav-tabs a { font-size: 0.97em; padding: 0.13em 0.6em; }
+      .nav-tabs a:last-child { margin-right: 1em; }
+    }
+    .container {
+      max-width: 440px; margin: 54px auto 0 auto; padding: 36px 24px 30px 24px;
+      background: #fff; border-radius: 18px; box-shadow: 0 4px 28px rgba(0, 0, 0, 0.08); text-align: center;
+    }
+    .headshot {
+      width: 120px; height: 120px; border-radius: 50%; object-fit: cover;
+      box-shadow: 0 2px 14px rgba(34, 136, 119, 0.11); margin-bottom: 18px;
+    }
+    h1 {
+      font-size: 2em; font-weight: 700; margin: 0 0 8px 0; letter-spacing: 0.01em;
+    }
+    .tagline {
+      font-size: 1.12em; color: #228877; font-weight: 500; margin-bottom: 12px; letter-spacing: 0.01em;
+    }
+    .cta {
+      font-size: 1.01em; color: #444; margin-bottom: 22px; line-height: 1.5;
+    }
+    .contact-block {
+      margin: 0 auto 18px auto; padding: 18px 0 0 0; border-top: 1px solid #f0f2f5;
+      display: flex; flex-direction: column; gap: 7px; align-items: center;
+    }
+    .contact-link {
+      color: #20589c; text-decoration: none; font-size: 1.07em; font-weight: 500;
+      display: flex; align-items: center; gap: 0.55em; transition: color 0.15s;
+    }
+    .contact-link:hover { color: #ff8800; text-decoration: underline; }
+    .copyright-footer {
+      width: 100%; text-align: center; font-size: 0.99em; color: #8da0a6;
+      margin-top: 40px; padding: 16px 0 10px 0; background: transparent;
+      letter-spacing: 0.01em;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html" class="brand">Ahmad Beirami</a>
+    <div class="nav-tabs">
+      <a href="about.html">About</a>
+      <a href="academic.html">Academic Engagements</a>
+    </div>
+  </div>
+  <div class="container">
+    <img src="beirami-hs.jpeg" alt="Ahmad Beirami Headshot" class="headshot" loading="lazy" />
+    <h1>Ahmad Beirami</h1>
+    <div class="tagline">Entrepreneur, Builder, &amp; AI Innovator</div>
+    <div class="cta">Turning advanced AI into real-world impact</div>
+    <div class="contact-block">
+      <a class="contact-link" href="mailto:ahmad.beirami@gmail.com"><i class="fa-solid fa-envelope"></i> ahmad.beirami@gmail.com</a>
+      <a class="contact-link" href="https://www.linkedin.com/in/ahmadbeirami/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </div>
+  <footer class="copyright-footer">Copyright 2025 Ahmad Beirami</footer>
+</body>
+</html>
