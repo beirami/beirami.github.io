@@ -1,0 +1,96 @@
+/* ===== Fonts (Option 3: Space Grotesk + Manrope, neutral light) =====
+   Paste this <link> in each HTML <head> (already included below):
+   https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap
+*/
+
+:root {
+  /* Typography */
+  --font-heading: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --font-body: "Manrope", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+
+  /* Colors */
+  --bg: #FFFFFF;
+  --text: #0E0F12;
+  --text-muted: #6B7280;
+  --accent: #3B82F6;       /* emerald */
+  --accent-hover: #60A5FA; /* lighter emerald */
+  --divider: #E5E7EB;
+}
+
+/* ===== Global (fonts & colors only) ===== */
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  color: var(--text);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover { color: var(--accent-hover); }
+
+small, .muted { color: var(--text-muted); }
+
+hr {
+  border: 0;
+  height: 1px;
+  background: var(--divider);
+}
+
+/* Keep nav simple: color + typography only */
+nav a {
+  color: var(--text);
+  font-weight: 600;
+}
+nav a:hover { color: var(--accent); }
+
+/* Footer text color only */
+footer {
+  color: var(--text-muted);
+}
+
+
+
+
+/* ===== Responsive gutters & max-width (CSS-only; no layout changes) ===== */
+:root {
+  --gutter: clamp(16px, 4vw, 32px); /* left/right breathing room on all screens */
+  --content-max: 72rem;             /* ~1152px readable line length on desktop */
+}
+
+body { margin: 0; } /* remove default UA margins */
+
+header > nav, main, footer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--content-max);
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+/* Mobile-friendly media defaults */
+img, video { max-width: 100%; height: auto; }
+pre, code { white-space: pre-wrap; word-wrap: break-word; }
+
+/* Optional small bump to base size on very small screens for readability */
+@media (max-width: 380px) {
+  html { font-size: 17px; }
+}
+
+
+/* Minimal hero layout: left-aligned headshot above name */
+.hero { text-align: left; }
+.hero img { display:block; margin: 0 0 0.75rem 0; }
+
+
+/* Mobile headshot sizing */
+@media (max-width: 480px) {
+  .hero img { max-width: 200px !important; height: auto; }
+}

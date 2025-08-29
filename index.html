@@ -1,114 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Ahmad Beirami</title>
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-  <style>
-    body { font-family: Inter, Arial, sans-serif; background: #f7f9fa; color: #232323; margin: 0; }
-    .navbar {
-      position: sticky;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      width: 100%; display: flex; align-items: center; background: #fff;
-      box-shadow: 0 2px 12px rgba(34, 34, 34, 0.04); padding: 0.85em 3.6em;
-    }
-    .brand {
-      font-weight: 700; color: #228877; font-size: 1.22em; letter-spacing: 0.01em;
-      text-decoration: none; transition: border-bottom 0.2s;
-      border-bottom: 2px solid transparent; padding-bottom: 1px;
-    }
-    .brand:hover { border-bottom: 2.5px solid #228877; }
-    .nav-tabs {
-      margin-left: auto; display: flex; gap: 1.35em;
-    }
-    .nav-tabs a {
-      padding: 0.19em 1.25em; border-radius: 1.1em; background: transparent;
-      color: #444; font-weight: 500; font-size: 1.07em;
-      text-decoration: none; transition: background 0.18s, color 0.18s;
-    }
-    .nav-tabs a:hover { background: #d1ede2; color: #20589c; }
-    .nav-tabs a:last-child { margin-right: 6em; }
-    @media (max-width: 700px) {
-      .navbar { padding: 0.7em; }
-      .brand { font-size: 1em; }
-      .nav-tabs { gap: 0.7em; }
-      .nav-tabs a { font-size: 0.97em; padding: 0.13em 0.6em; }
-      .nav-tabs a:last-child { margin-right: 1em; }
-    }
-    .container {
-      max-width: 700px;
-      margin: 100px auto 0 auto;
-      padding: 40px 32px 32px 32px;
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-      text-align: center;
-    }
-    @media (max-width: 700px) {
-      .container {
-        margin: 8vw 2vw;
-        padding: 13px 2vw;
-      }
-    }
-    .headshot {
-      width: 120px; height: 120px; border-radius: 50%; object-fit: cover;
-      box-shadow: 0 2px 14px rgba(34, 136, 119, 0.11); margin-bottom: 18px;
-    }
-    h1 {
-      font-size: 2em; font-weight: 700; margin: 0 0 8px 0; letter-spacing: 0.01em;
-    }
-    .tagline {
-      font-size: 1.12em; color: #228877; font-weight: 500; margin-bottom: 12px; letter-spacing: 0.01em;
-    }
-    .cta {
-      font-size: 1.01em; color: #444; margin-bottom: 22px; line-height: 1.5;
-    }
-    .contact-block {
-      margin: 0 auto 18px auto; padding: 18px 0 0 0; border-top: 1px solid #f0f2f5;
-      display: flex; flex-direction: column; gap: 7px; align-items: center;
-    }
-    .contact-link {
-      color: #20589c; text-decoration: none; font-size: 1.07em; font-weight: 500;
-      display: flex; align-items: center; gap: 0.55em; transition: color 0.15s;
-    }
-    .contact-link:hover { color: #ff8800; text-decoration: underline; }
-    .copyright-footer {
-      width: 100%; text-align: center; font-size: 0.99em; color: #8da0a6;
-      margin-top: 40px; padding: 16px 0 10px 0; background: transparent;
-      letter-spacing: 0.01em;
-    }
-  </style>
+  <title>Ahmad Beirami</title>
+  <!-- Fonts: Space Grotesk (headings) + Manrope (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <!-- Theme: fonts & colors only -->
+  <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-  <div class="navbar">
-    <a href="index.html" class="brand">Ahmad Beirami</a>
-    <div class="nav-tabs">
-      <a href="about.html">About</a>
+  <header>
+    <nav>
+      <a href="./">Ahmad Beirami</a> &nbsp; | &nbsp;
+      <a href="about.html">About</a> &nbsp; | &nbsp;
       <a href="academic.html">Academic Engagements</a>
-    </div>
-  </div>
-  <div class="container">
-    <img src="beirami-hs.jpeg" alt="Ahmad Beirami Headshot" class="headshot" loading="lazy" />
-    <h1>Ahmad Beirami</h1>
-    <div class="tagline">Powering the world with AI agents</div>
-    <div class="cta">Ex-Researcher @ Google (DeepMind), Meta, &amp EA<br>PhD / Postdoc @ MIT, Harvard, Duke, &amp; Georgia Tech</div>
-    <div class="contact-block">
-      <a class="contact-link" href="mailto:ahmad.beirami@gmail.com"><i class="fa-solid fa-envelope"></i> ahmad.beirami@gmail.com</a>
-      <a class="contact-link" href="https://scholar.google.com/citations?user=VuKWbMMAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar">
-        <img src="scholar.png" alt="Google Scholar Logo" style="height:1.25em;width:1.25em;vertical-align:middle;margin-bottom:2px;"> Scholar
-      </a>
-      <a class="contact-link" href="https://www.linkedin.com/in/abeirami" target="_blank" title="LinkedIn">
-        <img src="linkedin.png" alt="LinkedIn Logo" style="height:1.25em;width:1.25em;vertical-align:middle;margin-bottom:2px;"> LinkedIn
-      </a>
-      <a class="contact-link" href="https://x.com/abeirami" target="_blank" title="X">
-        <img src="x.png" alt="X Logo" style="height:1.25em;width:1.25em;vertical-align:middle;margin-bottom:2px;"> X
-      </a>
-    </div>
-  </div>
-  <footer class="copyright-footer">Copyright 2025 Ahmad Beirami</footer>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p>
+        <img src="beirami-hs.jpeg" alt="Ahmad Beirami headshot" style="max-width: 260px; height: auto;">
+      </p>
+      <h1>Ahmad Beirami</h1>
+      <p>Powering the world with AI agents</p>
+
+      <p>Ex-Researcher @ Google (DeepMind), Meta, &amp; EA<br>
+      PhD / Postdoc @ MIT, Harvard, Duke, &amp; Georgia Tech</p>
+
+      <p>
+        <a href="mailto:ahmad.beirami@gmail.com">ahmad.beirami@gmail.com</a>
+        &nbsp;&nbsp;·&nbsp;&nbsp;
+        <a href="https://scholar.google.com">Scholar</a>
+        &nbsp;&nbsp;·&nbsp;&nbsp;
+        <a href="https://www.linkedin.com">LinkedIn</a>
+        &nbsp;&nbsp;·&nbsp;&nbsp;
+        <a href="https://x.com">X</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <small>Copyright 2025 Ahmad Beirami</small>
+  </footer>
 </body>
 </html>

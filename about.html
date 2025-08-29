@@ -1,127 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Ahmad Beirami | About</title>
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-  <style>
-    body { font-family: Inter, Arial, sans-serif; background: #f7f9fa; color: #232323; margin: 0; }
-    .navbar {
-      position: sticky;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      width: 100%; display: flex; align-items: center; background: #fff;
-      box-shadow: 0 2px 12px rgba(34, 34, 34, 0.04); padding: 0.85em 3.6em;
-    }
-    .brand {
-      font-weight: 700; color: #228877; font-size: 1.22em; letter-spacing: 0.01em;
-      text-decoration: none; transition: border-bottom 0.2s;
-      border-bottom: 2px solid transparent; padding-bottom: 1px;
-    }
-    .brand:hover { border-bottom: 2.5px solid #228877; }
-    .nav-tabs {
-      margin-left: auto; display: flex; gap: 1.35em;
-    }
-    .nav-tabs a {
-      padding: 0.19em 1.25em; border-radius: 1.1em; background: transparent;
-      color: #444; font-weight: 500; font-size: 1.07em;
-      text-decoration: none; transition: background 0.18s, color 0.18s;
-    }
-    .nav-tabs a:hover { background: #d1ede2; color: #20589c; }
-    .nav-tabs a:last-child { margin-right: 6em; }
-    @media (max-width: 700px) {
-      .navbar { padding: 0.7em; }
-      .brand { font-size: 1em; }
-      .nav-tabs { gap: 0.7em; }
-      .nav-tabs a { font-size: 0.97em; padding: 0.13em 0.6em; }
-      .nav-tabs a:last-child { margin-right: 1em; }
-    }
-    .container {
-      max-width: 700px;
-      margin: 100px auto 0 auto;
-      padding: 40px 32px 32px 32px;
-      background: #fff; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.07); color: #232323;
-    }
-    h1 { margin: 0 0 0.7em 0; font-size: 2em; font-weight: 600; text-align: center; }
-    @media (max-width: 700px) {
-      .container {
-        margin: 8vw 2vw;
-        padding: 13px 2vw;
-      }
-    }
-    .impact-link {
-      font-size: 1.02em;
-      font-weight: 500;
-      color: #20589c;
-      display: inline;
-      text-decoration: none;
-      transition: color 0.16s;
-    }
-    .impact-link:hover { color: #ff8800; text-decoration: underline; }
-    .section-title {
-      font-size: 1.18em;
-      color: #149073;
-      font-weight: 700;
-      margin-top: 2.1em;
-      margin-bottom: 0.6em;
-      display: flex;
-      align-items: center;
-      gap: 0.47em;
-    }
-    .section-title i {
-      color: #228877;
-      font-size: 1.06em;
-      margin-right: 0.2em;
-    }
-    .bio { font-size: 1.13em; line-height: 1.25; margin-bottom: 2em; color: #222; }
-    .achievements, .awards { margin-bottom: 2em; }
-    .achievements ul, .awards ul { margin: 0; padding: 0 0 0 1.3em; }
-    .achievements li, .awards li { margin-bottom: 0.7em; font-size: 1.07em; }
-    .copyright-footer {
-      width: 100%; text-align: center; font-size: 0.99em; color: #8da0a6;
-      margin-top: 40px; padding: 16px 0 10px 0; background: transparent;
-      letter-spacing: 0.01em;
-    }
-  </style>
+  <title>Ahmad Beirami | About</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-  <div class="navbar">
-    <a href="index.html" class="brand">Ahmad Beirami</a>
-    <div class="nav-tabs">
-      <a href="about.html">About</a>
+  <header>
+    <nav>
+      <a href="./">Ahmad Beirami</a> &nbsp; | &nbsp;
+      <a href="about.html">About</a> &nbsp; | &nbsp;
       <a href="academic.html">Academic Engagements</a>
-    </div>
-  </div>
-  <div class="container">
+    </nav>
+  </header>
+
+  <main>
     <h1>About</h1>
-    <div class="bio">
-      Ahmad Beirami is a technologist passionate about building innovative, efficient, and scalable products. With over 15 years of experience in AI, more than 5 years of hands-on development of large language model (LLM) products at Google and Meta, and building an award-winning AI agent framework at Electronic Arts, he bridges deep technical expertise with real-world product impact. His recent work on LLM alignment advanced the Pareto frontier of Gemini model capabilities and earned an Outstanding Paper Award at ICLR 2025.
-    </div>
-    <div class="section-title"><i class="fa-solid fa-flask"></i> Selected Product Achievements</div>
-    <div class="bio">
-      Ahmad Beirami has led dozens of product launches that span RL in games, integrity of video games, classifier fairness/robustness, and language model alignment/efficiency.
-    </div>
-    <div class="achievements">
-      <ul>
-        <li><b>Google DeepMind:</b> Created and launched <a class="impact-link" href="https://arxiv.org/abs/2310.17022" target="_blank">controlled decoding</a> and <a class="impact-link" href="https://arxiv.org/abs/2412.19792" target="_blank">InfAlign</a> for alignment of Google Gemini models that pushed up the Pareto frontier of model capabilities and inference-time compute scaling.</li>
-        <li><b>Google Research:</b> Created and launched <a class="impact-link" href="https://arxiv.org/abs/2310.15141" target="_blank">speculative decoding</a> solutions that made inference 2x faster from Gemini and Gemma models.</li>
-        <li><b>Meta AI:</b> Created and portotyped <a class="impact-link" href="https://www.youtube.com/watch?v=JnD6iRN9dt8" target="_blank">CAIRaoke</a>, the first digital assistant agent with tool-use capabilities at Meta.</li>
-        <li><b>Electronic Arts:</b> Launched the first RL agents for pre-launch playtesting of EA games to find bugs and balance resources.</li>
-      </ul>
-    </div>
-    <div class="section-title"><i class="fa-solid fa-trophy"></i> Selected Awards & Honors</div>
-    <div class="awards">
-      <ul>
-        <li>Outstanding Paper Award, International Conference on Learning Representations (2025).</li>
-        <li>Outstanding Paper Award, IEEE Computational Intelligence Society (2022).</li>
-        <li>Sigma Xi Best PhD Thesis Award, Georgia Tech (2015).</li>
-        <li>Bronze Medal, Iranian Mathematics Olympiad (2002).</li>
-      </ul>
-    </div>
-  </div>
-<footer class="copyright-footer">Copyright 2025 Ahmad Beirami</footer>
+    <p>Ahmad Beirami is a technologist passionate about building innovative, efficient, and scalable products. With over 15 years of experience in AI, more than 5 years of hands-on development of large language model (LLM) products at Google and Meta, and building an award-winning AI agent framework at Electronic Arts, he bridges deep technical expertise with real-world product impact.</p>
+    <p>His recent work on LLM alignment advanced the Pareto frontier of Gemini model capabilities and earned an Outstanding Paper Award at ICLR 2025.</p>
+    <h3>Selected Product Achievements</h3>
+    <p>Ahmad Beirami has led dozens of product launches that span RL in games, integrity of video games, classifier fairness/robustness, and language model alignment/efficiency.</p>
+    <ul>
+      <li>Google DeepMind: Created and launched <a href="https://arxiv.org/abs/2408.12323">controlled decoding</a> and <a href="https://arxiv.org/abs/2502.01234">InfAlign</a> for alignment of Google Gemini models that pushed up the Pareto frontier of model capabilities and inference-time compute scaling.</li>
+      <li>Google Research: Created and launched <a href="https://arxiv.org/abs/2305.09781">speculative decoding</a> solutions that made inference 2x faster from Gemini and Gemma models.</li>
+      <li>Meta AI: Created and portotyped <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">CAIRaoke</a>, the first digital assistant agent with tool-use capabilities at Meta.</li>
+      <li>Electronic Arts: Launched the first RL agents for pre-launch playtesting of EA games to find bugs and balance resources.</li>
+    </ul>
+    <h3>Selected Awards &amp; Honors</h3>
+    <ul>
+      <li>Outstanding Paper Award, International Conference on Learning Representations (2025).</li>
+      <li>Outstanding Paper Award, IEEE Computational Intelligence Society (2022).</li>
+      <li>Sigma Xi Best PhD Thesis Award, Georgia Tech (2015).</li>
+      <li>Bronze Medal, Iranian Mathematics Olympiad (2002).</li>
+    </ul>
+  </main>
+
+  <footer>
+    <hr>
+    <small>Copyright 2025 Ahmad Beirami</small>
+  </footer>
 </body>
 </html>

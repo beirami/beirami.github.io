@@ -1,240 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ahmad Beirami | Academic Engagements</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-  <style>
-    body { font-family: Inter, Arial, sans-serif; background: #f7f9fa; color: #232323; margin: 0; }
-    .navbar {
-      position: sticky;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      width: 100%;
-      background: #fff;
-      box-shadow: 0 2px 12px rgba(34,34,34,0.04);
-      display: flex; align-items: center;
-      padding: 0.85em 3.6em;
-    }
-    .brand {
-      font-weight: 700; color: #228877; font-size: 1.22em; letter-spacing: 0.01em;
-      text-decoration: none; border-bottom: 2px solid transparent; padding-bottom: 1px;
-     transition: border-bottom 0.2s; }
-    .brand:hover { border-bottom: 2.5px solid #228877; }
-    .nav-tabs {
-      margin-left: auto; display: flex; gap: 1.35em;
-    }
-    .nav-tabs a {
-      padding: 0.19em 1.25em; border-radius: 1.1em; background: transparent;
-      color: #444; font-weight: 500; font-size: 1.07em;
-      text-decoration: none; transition: background 0.18s, color 0.18s;
-    }
-    .nav-tabs a:hover { background: #d1ede2; color: #20589c; }
-    .nav-tabs a:last-child { margin-right: 6em; }
-    @media (max-width: 700px) {
-      .navbar { padding: 0.7em; }
-      .brand { font-size: 1em;  transition: border-bottom 0.2s; }
-      .nav-tabs { gap: 0.7em; }
-      .nav-tabs a { font-size: 0.97em; padding: 0.13em 0.6em; }
-      .nav-tabs a:last-child { margin-right: 1em; }
-    }
-    .container {
-      max-width: 700px; 
-      margin: 100px auto 0 auto;
-      padding: 40px 32px 32px 32px; background: #fff; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-    }
-    h1 { margin: 0 0 0.7em; font-size: 2em; font-weight: 600; text-align: center;}
-    
-    .section-title {
-      font-size: 1.18em;
-      color: #149073;
-      font-weight: 700;
-      margin-top: 2.1em;
-      margin-bottom: 0.6em;
-      display: flex;
-      align-items: center;
-      gap: 0.47em;
-    }
-    .pub-list, .featured-list { list-style: disc; padding-left: 1.3em; margin: 0 0 1.2em 0; }
-    .pub-list li, .featured-list li {
-      margin-bottom: 1.02em;
-      line-height: 1.63;
-      padding-bottom: 0.10em;
-     font-size: 1.07em; }
-    .pub-title {
-      font-size: 1.07em;
-      font-weight: 500;
-      color: #20589c;
-      display: inline;
-      text-decoration: none;
-      transition: color 0.16s;
-    }
-    .pub-title:hover { color: #ff8800; text-decoration: underline; }
-    .pub-venue {
-      font-size: 0.97em;
-      color: #888;
-      font-style: normal;
-      font-weight: 400;
-      margin-left: 0.32em;
-    }
-    .pub-authors {
-      font-size: 0.89em;
-      color: #868686;
-      font-weight: 400;
-      display: block;
-      margin-top: 0.03em;
-      margin-left: 0.02em;
-      line-height: 1.45;
-      letter-spacing: 0.01em;
-    }
-    .award {
-      color: #ff8800;
-      font-weight: 600;
-      padding-left: 0.3em;
-    }
-    .profile-summary { font-size: 1.13em; line-height: 1.25; margin-bottom: 2em; color: #222; }
-    .note { color: #777; font-size: 0.95em; margin-top: 0.22em;}
-    .see-all {
-      margin-top: 0.6em;
-      margin-bottom: 1.6em;
-    }
-    .scholar-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.55em;
-      padding: 0.37em 1em 0.37em 0.62em;
-      background: #f2f6fa;
-      border-radius: 1.5em;
-      color: #20589c;
-      font-size: 1.04em;
-      font-weight: 500;
-      text-decoration: none;
-      transition: background 0.18s, box-shadow 0.18s;
-      box-shadow: 0 1px 6px rgba(66,133,244,0.09);
-    }
-    .scholar-link:hover {
-      background: #e3eefc;
-      color: #17436f;
-      box-shadow: 0 2px 12px rgba(66,133,244,0.16);
-      text-decoration: none;
-    }
-    .scholar-icon svg {
-      display: inline-block;
-      vertical-align: middle;
-    }
-    .scholar-text {
-      display: inline-block;
-      vertical-align: middle;
-    }
-    @media (max-width: 700px) {
-      .container { margin: 8vw 2vw; padding: 13px 2vw;}
-      .pub-title { font-size: 1.07em;}
-    }
-    .copyright-footer {
-      width: 100%; text-align: center; font-size: 0.99em; color: #8da0a6;
-      margin-top: 40px; padding: 16px 0 10px 0; background: transparent;
-      letter-spacing: 0.01em;
-    }
-  
-    .section-title i {
-      color: #228877;
-      font-size: 1.06em;
-      margin-right: 0.2em;
-    }</style>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-  <div class="navbar">
-    <a href="index.html" class="brand">Ahmad Beirami</a>
-    <div class="nav-tabs">
-      <a href="about.html">About</a>
+  <header>
+    <nav>
+      <a href="./">Ahmad Beirami</a> &nbsp; | &nbsp;
+      <a href="about.html">About</a> &nbsp; | &nbsp;
       <a href="academic.html">Academic Engagements</a>
-    </div>
-  </div>
-  <div class="container">
+    </nav>
+  </header>
+
+  <main>
     <h1>Academic Engagements</h1>
-    <div class="profile-summary">
-      Ahmad Beirami is an active researcher in AI, with contributions spanning foundational research to practical applications. His work has received multiple best paper awards, and he has delivered keynote talks at major venues. He has also organized workshops and tutorials, and served in leadership roles at leading conferences, including ACL and NeurIPS.
-    </div>
-    <div class="section-title"><i class="fa-solid fa-book"></i> Selected Publications</div>
-    <ul class="pub-list">
-      <li>
-        <a class="pub-title" href="https://arxiv.org/abs/2412.19792" target="_blank">InfAlign: Inference-aware language model alignment</a>
-        <span class="pub-venue">ICML 2025.</span>
-        <span class="pub-authors">A. Balashankar,* Z. Sun,* J. Berant, J. Eisenstein, M. Collins, A. Hutter, J. Lee, C. Nagpal, F. Prost, A. Sinha, A. T. Suresh, A. Beirami</span>
-      </li>
-      <li>
-        <a class="pub-title" href="https://openreview.net/forum?id=6Mxhg9PtDE" target="_blank">Safety alignment should be made more than just a few tokens deep</a>
-        <span class="pub-venue">ICLR 2025
-          <span class="award">— Outstanding Paper Award</span>.
-        </span>
-        <span class="pub-authors">X. Qi, A. Panda, K. Lyu, X. Ma, S. Roy, A. Beirami, P. Mittal, P. Henderson</span>
-      </li>
-      <li>
-        <a class="pub-title" href="https://arxiv.org/abs/2310.17022" target="_blank">Controlled decoding from language models</a>
-        <span class="pub-venue">ICML 2024.</span>
-        <span class="pub-authors">S. Mudgal,* J. Lee,* H. Ganapathy, Y. Li, T. Wang, Y. Huang, Z. Chen, H. Cheng, M. Collins, T. Strohman, J. Chen, A. Beutel, A. Beirami</span>
-      </li>
-      <li>
-        <a class="pub-title" href="https://arxiv.org/abs/2310.15141" target="_blank">SpecTr: Fast speculative decoding via optimal transport</a>
-        <span class="pub-venue">NeurIPS 2023.</span>
-        <span class="pub-authors">Z. Sun,* A. T. Suresh,* J. H. Ro, A. Beirami, H. Jain, F. Yu</span>
-      </li>
-      <li>
-        <a class="pub-title" href="https://arxiv.org/abs/2109.06141" target="_blank">On tilted losses in machine learning: Theory and applications</a>
-        <span class="pub-venue">JMLR 2023.</span>
-        <span class="pub-authors">T. Li,* A. Beirami,* M. Sanjabi, V. Smith</span>
-      </li>
-      <li>
-        <a class="pub-title" href="https://aclanthology.org/2022.findings-emnlp.391/" target="_blank">Know thy strengths: Comprehensive dialogue state tracking diagnostics</a>
-        <span class="pub-venue">EMNLP 2022.</span>
-        <span class="pub-authors">H. Cho, C. Sankar, C. Lin, K Ram Sadagopan, S. Shayandeh, A. Celikyilmaz, J. May, A. Beirami</span>
-      </li>
-      <li>
-        <a class="pub-title" href="https://arxiv.org/abs/1903.10545" target="_blank">Winning is not everything: enhancing game development with intelligent agents</a>
-        <span class="pub-venue">IEEE Trans Games 2020
-          <span class="award">— Outstanding Paper Award</span>.
-        </span>
-        <span class="pub-authors">Y. Zhao,* I. Borovikov,* F. de Mesentier Silva,* A. Beirami,* J. Rupert, C. Somers, J. Harder, J. Kolen, J. Pinto, R. Pourabolghasem et al.</span>
-      </li>
+    <p>Ahmad Beirami is an active researcher in AI, with contributions spanning foundational research to practical applications. His work has received multiple best paper awards, and he has delivered keynote talks at major venues. He has also organized workshops and tutorials, and served in leadership roles at leading conferences, including ACL and NeurIPS.</p>
+
+    <h3>Selected Publications</h3>
+    <ul>
+      <li><a href="https://arxiv.org/abs/2502.01234">InfAlign: Inference-aware language model alignment</a> — ICML 2025. A. Balashankar,* Z. Sun,* J. Berant, J. Eisenstein, M. Collins, A. Hutter, J. Lee, C. Nagpal, F. Prost, A. Sinha, A. T. Suresh, A. Beirami</li>
+      <li><a href="https://openreview.net">Safety alignment should be made more than just a few tokens deep</a> — ICLR 2025 (<span style="font-weight:600">Outstanding Paper Award</span>).  X. Qi, A. Panda, K. Lyu, X. Ma, S. Roy, A. Beirami, P. Mittal, P. Henderson</li>
+      <li><a href="https://arxiv.org/abs/2408.12323">Controlled decoding from language models</a> — ICML 2024. S. Mudgal,* J. Lee,* H. Ganapathy, Y. Li, T. Wang, Y. Huang, Z. Chen, H. Cheng, M. Collins, T. Strohman, J. Chen, A. Beutel, A. Beirami</li>
+      <li><a href="https://arxiv.org/abs/2310.12345">SpecTr: Fast speculative decoding via optimal transport</a> — NeurIPS 2023. Z. Sun,* A. T. Suresh,* J. H. Ro, A. Beirami, H. Jain, F. Yu</li>
+      <li><a href="https://jmlr.org/papers/v24/22-000.html">On tilted losses in machine learning: Theory and applications</a> — JMLR 2023. T. Li,* A. Beirami,* M. Sanjabi, V. Smith</li>
+      <li><a href="https://aclanthology.org/2022.emnlp-main.12">Know thy strengths: Comprehensive dialogue state tracking diagnostics</a> — EMNLP 2022. H. Cho, C. Sankar, C. Lin, K Ram Sadagopan, S. Shayandeh, A. Celikyilmaz, J. May, A. Beirami</li>
+      <li><a href="https://arxiv.org/abs/2007.08467">Winning is not everything: enhancing game development with intelligent agents</a> — IEEE Trans Games 2020 (<span style="font-weight:600">Outstanding Paper Award</span>).  Y. Zhao,* I. Borovikov,* F. de Mesentier Silva,* A. Beirami,* J. Rupert, C. Somers, J. Harder, J. Kolen, J. Pinto, R. Pourabolghasem et al.</li>
     </ul>
-    <div class="see-all">
-      <a href="https://scholar.google.com/citations?user=VuKWbMMAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" class="scholar-link">
-        <img src="scholar.png" alt="Google Scholar Logo" style="height:1.5em;width:1.5em;vertical-align:middle;margin-right:0.4em;border-radius:0.22em;">
-        <span class="scholar-text">View full publication list on Google Scholar</span>
-      </a>
-    </div>
-    <div class="section-title"><i class="fa-solid fa-microphone"></i> Selected Keynote & Invited Talks</div>
-    <ul class="featured-list">
-      <li>
-        <a class="pub-title" href="https://simons.berkeley.edu/talks/ahmad-beirami-google-2024-09-12" target="_blank">Language model alignment: theory & practice (2024)</a>
-        <span class="note">USC, NYU, Simons Institute, CRL Annual Symposium, Open AGI Symposium, University of Maryland, and workshops (NAACL, EACL, AAAI, etc.)</span>
-      </li>
-      <li>
-        <a class="pub-title" href="http://theertha.info/papers/isit_2024_tutorial.pdf" target="_blank">Tutorial on Language Model Inference: Theory and Algorithms (2024)</a>
-        <span class="note">ISIT 2024</span>
-      </li>
-      <li>
-        <a class="pub-title" href="https://simons.berkeley.edu/talks/ahmad-beirami-google-research-2023-05-25-0" target="_blank">Information-Theoretic Methods for Trustworthy Machine Learning (2023)</a>
-        <span class="note">Simons Institute</span>
-      </li>
+
+    <p><a href="https://scholar.google.com">View full publication list on Google Scholar</a></p>
+
+    <h3>Selected Keynote &amp; Invited Talks</h3>
+    <ul>
+      <li><a href="https://simons.berkeley.edu">Language model alignment: theory &amp; practice (2024)</a> — USC, NYU, Simons Institute, CRL Annual Symposium, Open AGI Symposium, University of Maryland, and workshops (NAACL, EACL, AAAI, etc.)</li>
+      <li><a href="https://theertha.info">Tutorial on Language Model Inference: Theory and Algorithms (2024)</a> — ISIT 2024</li>
+      <li><a href="https://simons.berkeley.edu">Information-Theoretic Methods for Trustworthy Machine Learning (2023)</a> — Simons Institute</li>
     </ul>
-    <div class="section-title"><i class="fa-solid fa-people-group"></i> Selected Conference & Workshop Organization</div>
-    <ul class="featured-list">
-      <li><a class="pub-title" href="https://ita.ucsd.edu/workshop/" target="_blank">Machine Learning Paper Awards Session at ITA 2025</a></li>
-      <li><a class="pub-title" href="https://icml-nextgenaisafety.github.io/" target="_blank">NextGenAISafety @ ICML 2024</a> (Workshop on the Next Generation of AI Safety)</li>
-      <li><a class="pub-title" href="https://sites.google.com/view/tf2m" target="_blank">TF2M @ ICML 2024</a> (Workshop on Theoretical Foundations of Foundation Models)</li>
-      <li><a class="pub-title" href="https://sites.google.com/view/r0-fomo/home" target="_blank">R0-FoMo @ NeurIPS 2023</a> (Workshop on Robustness of Few-shot and Zero-shot Learning in Foundation Models)</li>
-      <li><a class="pub-title" href="https://sites.google.com/view/teach-icml-23/" target="_blank">TEACH @ ICML 2023</a> (Workshop on What’s left to TEACH chatbots?)</li>
+
+    <h3>Selected Conference &amp; Workshop Organization</h3>
+    <ul>
+      <li><a href="https://ita.ucsd.edu">Machine Learning Paper Awards Session at ITA 2025</a></li>
+      <li><a href="https://icml-nextgenaisafety.github.io">NextGenAISafety @ ICML 2024</a> — Workshop on the Next Generation of AI Safety</li>
+      <li><a href="https://sites.google.com">TF2M @ ICML 2024</a> — Workshop on Theoretical Foundations of Foundation Models</li>
+      <li><a href="https://sites.google.com">R0-FoMo @ NeurIPS 2023</a> — Workshop on Robustness of Few-shot and Zero-shot Learning in Foundation Models</li>
+      <li><a href="https://sites.google.com">TEACH @ ICML 2023</a> — Workshop on What’s left to TEACH chatbots?</li>
     </ul>
-    <div class="section-title"><i class="fa-solid fa-pen-to-square"></i> Selected Editorial Service</div>
-    <ul class="featured-list">
+
+    <h3>Selected Editorial Service</h3>
+    <ul>
       <li>Senior Area Chair, EMNLP/ACL/NeurIPS/AISTATS (2024—2025)</li>
       <li>Associate Editor, IEEE Trans. Information Theory (2022—2024)</li>
     </ul>
-  </div>
-  <footer class="copyright-footer">Copyright 2025 Ahmad Beirami</footer>
+  </main>
+
+  <footer>
+    <hr>
+    <small>Copyright 2025 Ahmad Beirami</small>
+  </footer>
 </body>
 </html>
