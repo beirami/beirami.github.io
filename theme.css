@@ -21,24 +21,28 @@
 
 /* Sticky top nav (shared across pages) */
 html, body { margin: 0; }                /* remove default top gap */
-.site-nav {
-  position: -webkit-sticky;              /* Safari */
+
+/* Make the entire <header> sticky so the nav isn't clipped by its parent */
+header {
   position: sticky;
   top: 0;
-  z-index: 1000;                         /* sit above page content */
+  z-index: 1000;                         /* stay above content */
   background: #fff;                      /* readable over content */
   border-bottom: 1px solid #eee;
-  padding: 0.75rem 1rem;
 }
+
+/* Keep nav padding/spacing inside the sticky header */
+.site-nav { padding: 0.75rem 1rem; }
 .site-nav a { text-decoration: none; }
 .site-nav a + a { margin-left: 0.75rem; }
 
 @supports (backdrop-filter: blur(8px)) {
-  .site-nav {
+  header {
     background: rgba(255,255,255,0.85);
     backdrop-filter: blur(8px);
   }
 }
+
 
 
 
